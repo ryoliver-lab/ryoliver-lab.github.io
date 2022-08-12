@@ -22,7 +22,7 @@ knitr::opts_chunk$set(echo = FALSE)
 knitr::include_graphics("img/campus.jpeg")
 ```
 
-## Welcome!
+## Welcome
 
 The Oliver Lab is based at the [University of California, Santa Barbara](https://ucsb.edu) in the [Bren School of Environmental Science & Management](https://bren.ucsb.edu).
 
@@ -46,20 +46,39 @@ If any of this interests you, see details on joining below!
 # or copy/paste this code elsewhere, updating the file path, to add other images to your site!
 knitr::include_graphics("img/headshot.jpg")
 ```
-**Ruth Oliver** (she/her/hers)
-
+<p style="color: #033F63">**Ruth Oliver**  </p>  
+(she/her/hers)  
 **Assistant Professor** - UCSB  
 **Associate Research Scientist** - Yale University  
 **PhD** - Earth & Environmental Science, Columbia University  
 **BA** - Physics, Claremeont McKenna College  
-
 **email**: rutholiver\@bren.ucsb.edu
 :::
 
   
 ## Join!
 
-Add text
+I'm looking forward to building a supportive and collaborative lab group. There are opportunities for both joining existing projects and developing new projects together.
 
+### Graduate students
+
+PhD students can join the group through the [Bren's School PhD program](https://bren.ucsb.edu/phd-environmental-science-and-management).
+I will be recruiting students in the fall of 2022 (deadline to apply: December 15).
+
+Instead of emailing me, please fill out the interest survey below, so I can better organize my responses.   
+***Note:*** You are more than welcome to reach out to other potential advisors at UCSB.
+
+**Resources on reaching out to potential advisors:**  
+
+-   [First Gen Guide](https://first-gen-guide.com/2020/07/24/phd-admissions-emailing-potential-advisors/)
+-   [Cornell EEB](https://ecologyandevolution.cornell.edu/sites/eeb/files/Tips%20for%20contacting%20potential%20advisors.pdf)
+
+### Postdoctoral researchers
+
+I will be welcoming postdocs on an ongoing basis, depending on funding availability. If our research interests align and you would like to develop fellowship proposal(s) together, please fill out the interest survey below.
+
+### Interest survey
+
+Fill out here!
 
 This website is based on a [template](https://github.com/allisonhorst/meds-distill-template) created by Dr. Allison Horst.

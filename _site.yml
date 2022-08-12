@@ -33,8 +33,13 @@ navbar:
 #      href: assignments.html
     - text: "Publications"
       href: publications.html
+    - icon: ai ai-google-scholar fa-lg
+      href: https://scholar.google.com/citations?user=Cqv1EXkAAAAJ&hl=en
+    - icon: fab fa-twitter
+      href: https://twitter.com/ruth_oliver_
     - icon: fab fa-github
       href: https://github.com/ryoliver-lab
+
 output:
   distill::distill_article:
     toc: true
