@@ -1,0 +1,36 @@
+---
+  title: "Publications"
+---
+
+  ```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 2022
+Walter Jetz, Grigori Tertitski, Roland Kays, Uschi Mueller, Martin Wikelski, and supporting authors … **Ruth Y. Oliver** … (2022)  Biological earth observation with animal sensors. Trends in Ecology & Evolution, 37(4), 293-298.
+
+## 2021
+**Ruth Y. Oliver**, Carsten Meyer, Ajay Ranipeta, Kevin Winner, Walter Jetz (2021) Global and national trends, gaps, and opportunities in documenting and monitoring species distributions. PLoS Biology, 19(8), e3001336.
+DOI: https://doi.org/10.1371/journal.pbio.3001336
+
+## 2020
+Sarah C. Davidson, Gil Bohrer, Eliezer Gurarie, Jyoti Jennewein, Scott LaPoint, Peter J. Mahoney, Natalie T. Boelman, Jan Eitel, Laura R. Prugh, Lee Vierling, Emma Grier, Ajran H. Meddens, **Ruth Y. Oliver**, Roland Kays, Martin Wikelski, …, Mark Hebblewhite. (2020) Ecological insights from three decades of animal movement tracking across a changing Arctic, Science, 370.
+DOI: 10.1126/science.abb7080
+
+**Ruth Y. Oliver**, Peter J. Mahoney, Eliezer Gurarie, Nicole Krikun, Brian Weeks, Mark Hebblewhite, Glen Liston, Natalie Boelman (2020) Behavioral responses to spring snow conditions contribute to long-term shift in migration phenology in American robins, Environmental Research Letters, 15, 045003.
+DOI: https://doi.org/10.1088/1748-9326/ab71a0
+
+## 2019
+Jorge Ahumada, Eric Fegraus, Tanya Birch, Nicole Flores, Roland Kays, Tim O’Brien, Jonathan Palmer, Stephanie Schuttler, Jennifer Zhoa, Walter Jetz, Margaret Kinnaird, Sayali Kulkarni, Arnaud Lyet, Dave Thau, Michelle Duong, **Ruth Oliver**, Anthony Dancer. (2019) Wildlife Insights: A platform to maximize the potential of camera trap and other passive sensor wildlife data for the planet, Environmental Conservation.
+DOI: https://doi.org/10.1017/S0376892919000298
+
+## 2018
+**Ruth Y. Oliver**, Daniel P. W. Ellis, Helen E. Chmura, Jesse S. Krasue, Jonathan H. Pérez, Shannan K. Sweet, Laura Gough, John C. Wingfield, Natalie T. Boelman (2018) Eavesdropping on the Arctic: Automated bioacoustic reveal dynamics in songbird breeding phenology, Science Advances, 4.
+DOI: https://doi.org/10.1126/sciadv.aaq1084
+
+## 2017
+Benton N. Taylor, Angelica E. Patterson, Moyosore Ajayi, Rachel Arkebauer, Karen Bao, Natalie Bray, Robert M. Elliott, Paul P.G. Gauthier, Jessica Gersony, Rebecca Gibson, Marceau Guerin, Sara Lavenhar, Caroline Leland, Léo Lemordant, Wenying Liao, Jerry Melillo, **Ruth Oliver**, Case M. Prager, William Schuster, Naomi B. Schwartz, Christa Shen, Katherine Pavlis Terlizzi, and Kevin L. Griffin (2017) Growth and physiology of a dominant understory shrub, Hamamelis virginiana, following canopy disturbance in a temperate hardwood forest, Canadian Journal of Forest Research, 47: 193-201.
+
+## 2016
+Troy S. Magney, Jan U.H. Eitel, Kevin L. Griffin, Natalie T. Boelman, Heather E. Greaves, Case M. Prager, Barry A. Logan, Guang Zheng, Lixia Ma, Elizabeth A. Fortin, **Ruth Y. Oliver**, Lee A. Vierling (2016) LiDAR canopy radiation model reveals patterns of photosynthetic partitioning in an Arctic shrub, Agricultural and Forest Meteorology, 221: 78-93. DOI: http://dx.doi.org/10.1016/j.agrformet.2016.02.007.
+

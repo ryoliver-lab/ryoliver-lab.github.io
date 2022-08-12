@@ -31,8 +31,8 @@ navbar:
 #          href: topic_10.html
 #    - text: "Assignments"
 #      href: assignments.html
-#    - text: "Resources"
-#      href: resources.html
+    - text: "Publications"
+      href: publications.html
     - icon: fab fa-github
       href: https://github.com/ryoliver-lab
 output:
