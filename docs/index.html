@@ -23,6 +23,7 @@
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
 div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
@@ -49,16 +50,17 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { } /* Attribute */
+code span.at { color: #657422; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
+code span.cf { color: #00769e; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -72,9 +74,9 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
+code span.kw { color: #00769e; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
+code span.ot { color: #00769e; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
 code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
@@ -84,30 +86,31 @@ code span.vs { color: #20794d; } /* VerbatimString */
 code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
-  <!--radix_placeholder_meta_tags-->
-  <title>EDS 123: EDS 123: Optional MEDS Template</title>
 
-  <meta property="description" itemprop="description" content="A minimal website skeleton and theme for MEDS course with distill (by RStudio)"/>
+  <!--radix_placeholder_meta_tags-->
+  <title>Oliver Lab</title>
+
+  <meta property="description" itemprop="description" content="Global change ecology at UCSB&#39;s Bren School"/>
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="EDS 123: EDS 123: Optional MEDS Template"/>
+  <meta property="og:title" content="Oliver Lab"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="A minimal website skeleton and theme for MEDS course with distill (by RStudio)"/>
+  <meta property="og:description" content="Global change ecology at UCSB&#39;s Bren School"/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:site_name" content="EDS 123"/>
+  <meta property="og:site_name" content="Oliver Lab"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="EDS 123: EDS 123: Optional MEDS Template"/>
-  <meta property="twitter:description" content="A minimal website skeleton and theme for MEDS course with distill (by RStudio)"/>
+  <meta property="twitter:title" content="Oliver Lab"/>
+  <meta property="twitter:description" content="Global change ecology at UCSB&#39;s Bren School"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","site"]}},"value":[{"type":"character","attributes":{},"value":["EDS 123: Optional MEDS Template"]},{"type":"character","attributes":{},"value":["A minimal website skeleton and theme for MEDS course with distill (by RStudio)"]},{"type":"character","attributes":{},"value":["distill::distill_website"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","site"]}},"value":[{"type":"character","attributes":{},"value":["Oliver Lab"]},{"type":"character","attributes":{},"value":["Global change ecology at UCSB's Bren School"]},{"type":"character","attributes":{},"value":["distill::distill_website"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -454,7 +457,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   </style>
 
-  <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
   <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
   <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
@@ -1026,10 +1029,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     position: relative;
     margin-bottom: 2.5em;
     margin-top: 1.5em;
-  }
-
-  .figure img {
-    width: 100%;
   }
 
   .figure .caption {
@@ -1861,6 +1860,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
+        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
+          var fn = $(this).children()[0]
+          $(this).html(fn.shadowRoot.querySelector("sup"))
+          $(this).id = fn.id
+          fn.remove()
+        }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
           return "<p>" + $('#ref-' + ref).html() + "</p>";
@@ -1875,6 +1880,31 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
           placement: 'bottom-start'
         });
       });
+
+      // fix footnotes in tables (#411)
+      // replacing broken distill.pub feature
+      $('table d-footnote').each(function() {
+        // we replace internal showAtNode methode which is triggered when hovering a footnote
+        this.hoverBox.showAtNode = function(node) {
+          // ported from https://github.com/distillpub/template/pull/105/files
+          calcOffset = function(elem) {
+              let x = elem.offsetLeft;
+              let y = elem.offsetTop;
+              // Traverse upwards until an `absolute` element is found or `elem`
+              // becomes null.
+              while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                  x += elem.offsetLeft;
+                  y += elem.offsetTop;
+              }
+
+              return { left: x, top: y };
+          }
+          // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+          const bbox = node.getBoundingClientRect();
+          const offset = calcOffset(node);
+          this.show([offset.left + bbox.width, offset.top + bbox.height]);
+        }
+      })
 
       // clear polling timer
       clearInterval(tid);
@@ -1974,6 +2004,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // mark non-body figures created by knitr chunks as 100% width
     $('.layout-chunk').each(function(i, val) {
       var figures = $(this).find('img, .html-widget');
+      // ignore leaflet img layers (#106)
+      figures = figures.filter(':not(img[class*="leaflet"])')
       if ($(this).attr('data-layout') !== "l-body") {
         figures.css('width', '100%');
       } else {
@@ -1996,7 +2028,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // get rid of index.html references in header
     if (window.location.protocol !== "file:") {
       $('.distill-site-header a[href]').each(function(i,val) {
-        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+        $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
       });
     }
 
@@ -2143,9 +2175,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     --aside-size:      12px;
     --fig-cap-size:    13px;
     /*-- Main font colors --*/
-    --title-color:     #003660;
+    --title-color:     #033F63;
     --title-weight:    400;
-    --header-color:    rgba(4, 124, 145, 1);
+    --header-color:    #033F63;
     --body-color:      rgba(0, 0, 0, 0.8);
     --aside-color:     rgba(0, 0, 0, 0.6);
     --fig-cap-color:   rgba(0, 0, 0, 0.6);
@@ -2186,7 +2218,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     --text-color:       rgba(255, 255, 255, 0.8);
     --text-size:        18px;
     --hover-color:      white;
-    --bkgd-color:       #047C91;
+    --bkgd-color:       #5E8CE8;
   }
 
   .distill-site-footer {
@@ -2444,7 +2476,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.7/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2464,7 +2496,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"EDS 123: Optional MEDS Template","description":"A minimal website skeleton and theme for MEDS course with distill (by RStudio)","authors":[]}
+{"title":"Oliver Lab","description":"Global change ecology at UCSB's Bren School","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2472,32 +2504,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <header class="header header--fixed" role="banner">
 <nav class="distill-site-nav distill-site-header">
 <div class="nav-left">
-<a href="index.html" class="title">EDS 123</a>
+<a href="index.html" class="title">Oliver Lab</a>
 </div>
 <div class="nav-right">
 <a href="index.html">Home</a>
-<div class="nav-dropdown">
-<button class="nav-dropbtn">
-Topics
- 
-<span class="down-arrow">&#x25BE;</span>
-</button>
-<div class="nav-dropdown-content">
-<a href="topic_1.html">Topic 1: Add a new site page</a>
-<a href="topic_2.html">Topic 2: Update site title &amp; subtitle</a>
-<a href="topic_3.html">Topic 3: Add images</a>
-<a href="topic_4.html">Topic 4: Change the theme</a>
-<a href="topic_5.html">Topic 5: Basic formatting</a>
-<a href="topic_6.html">Topic 6: Internal &amp; external links</a>
-<a href="topic_7.html">Topic 7: Remove tables of contents</a>
-<a href="topic_8.html">Topic 8: Add a dropdown menu from navigation bar item</a>
-<a href="topic_9.html">Topic 9: Change site fonts</a>
-<a href="topic_10.html">Topic 10: Add a table</a>
-</div>
-</div>
-<a href="assignments.html">Assignments</a>
-<a href="resources.html">Resources</a>
-<a href="https://github.com/allisonhorst/meds-distill-template">
+<a href="https://github.com/ryoliver-lab">
 <i class="fab fa-github" aria-hidden="true"></i>
 </a>
 <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
@@ -2509,10 +2520,10 @@ Topics
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>EDS 123: Optional MEDS Template</h1>
+<h1>Oliver Lab</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p>A minimal website skeleton and theme for MEDS course with distill (by RStudio)</p>
+<p>Global change ecology at UCSB’s Bren School</p>
 </div>
 
 
@@ -2521,159 +2532,32 @@ Topics
 <nav class="l-text toc figcaption" id="TOC">
 <h3>Contents</h3>
 <ul>
-<li><a href="#welcome-to-the-meds-distill-template">Welcome to the MEDS distill template</a>
-<ul>
-<li><a href="#some-starting-points">Some starting points:</a></li>
-</ul></li>
-<li><a href="#course-description">Course description</a></li>
-<li><a href="#teaching-team">Teaching team</a></li>
-<li><a href="#important-links">Important links</a></li>
-<li><a href="#weekly-course-schedule">Weekly course schedule</a></li>
-<li><a href="#learning-objectives">Learning objectives</a></li>
-<li><a href="#course-requirements">Course requirements</a>
-<ul>
-<li><a href="#computing">Computing</a></li>
-<li><a href="#textbook">Textbook</a></li>
-<li><a href="#other-requirements">Other requirements</a></li>
-</ul></li>
-<li><a href="#tentative-topics">Tentative topics</a></li>
+<li><a href="#welcome" id="toc-welcome">Welcome!</a></li>
+<li><a href="#people" id="toc-people">People</a></li>
+<li><a href="#research" id="toc-research">Research</a></li>
+<li><a href="#join" id="toc-join">Join!</a></li>
 </ul>
 </nav>
 </div>
 <div class="layout-chunk" data-layout="l-body">
-<div class="figure"><span id="fig:unnamed-chunk-1"></span>
-<img src="img/usgs_sat.jpeg" alt="Update this image by dropping your new image into the img folder of the project, then open the index.Rmd &amp; change the path to point to the new image. Image: Mississippi River south of Memphis, TN, from USGS shared on Unsplash (https://unsplash.com/photos/35Z2ylLRCO8)." width="100%" />
-<p class="caption">
-Figure 1: Update this image by dropping your new image into the img folder of the project, then open the index.Rmd &amp; change the path to point to the new image. Image: Mississippi River south of Memphis, TN, from USGS shared on Unsplash (<a href="https://unsplash.com/photos/35Z2ylLRCO8" class="uri">https://unsplash.com/photos/35Z2ylLRCO8</a>).
-</p>
+<p><img src="img/landscape.jpg" width="100%" /></p>
 </div>
-</div>
-<h2 id="welcome-to-the-meds-distill-template">Welcome to the MEDS distill template</h2>
-<p>Welcome to the MEDS Course Website template! This template is made with <a href="https://rstudio.github.io/distill/">distill</a>, a package to build lightweight and robust websites in R. This method for creating a course website may make the most sense for MEDS teachers who are familiar with RStudio, R Markdown, git and GitHub (or who want to learn!). For those of you who do <em>not</em> want to create your website with distill in R, but still want a course website, check out <a href="https://course-in-a-box.p2pu.org/">Course-in-a-Box</a> to create a site with no prior coding experience.</p>
-<p>For those wanting to take the distill/R websites path: this template acts as both a starting point for your site, and place to learn basics ways to customize it (different topics currently populate the different modules, which I expect teachers will replace with different weeks or lessons or topics as useful for your courses).</p>
-<h3 id="some-starting-points">Some starting points:</h3>
-<ul>
-<li><p>Follow along with the “Getting started with the MEDS distill template” (COMING SOON) instructions to set up your own distill website. Please reach out to Allison for help getting your website started, and submit problems and suggestions as issues <a href="https://github.com/allisonhorst/meds-distill-template">here</a>.</p></li>
-<li><p>The “Weekly materials” section of this template site can be updated with your course materials, but also in this template serves the additional purpose of showing you how to customize some things on your page.</p></li>
-<li><p>See the <a href="https://allisonhorst.github.io/EDS_212_essential-math/">EDS 212 Website</a> for an example of what a customized live course site can look like using this template.</p></li>
-</ul>
-<p style="color: #ba5e00">
-<b>TO UPDATE THIS PAGE:</b> Open and edit the <b>index.Rmd</b> file, in the project root, to delete this placeholder text and customize with your own!
-</p>
-<h2 id="course-description">Course description</h2>
-<p style="color: #ba5e00">
-<b>NOTE:</b> A lot of this home page information can be directly from your syllabus.
-</p>
-<p>Add your course description here.</p>
-<h2 id="teaching-team">Teaching team</h2>
-<p><strong>Instructor:</strong> Mike Wazowski (wazowski@monstersinc.org)</p>
-<ul>
-<li><strong>Office:</strong> Closet 100</li>
-<li><strong>Office hours:</strong> Friday 9pm - 11pm</li>
-</ul>
-<p><strong>Teaching assistant:</strong> Boo (boo@monstersinc.org)</p>
-<ul>
-<li><strong>Office:</strong> Boo’s Room</li>
-<li><strong>Office hours:</strong> Saturday 7am - 8am</li>
-</ul>
-<h2 id="important-links">Important links</h2>
-<ul>
-<li><p>Link to full course syllabus (here is the <a href="https://docs.google.com/document/d/1b2CElvwKk-haEA1axY5KvTEBbiSPUf7dIRUNX7gCI6w/edit?usp=sharing">MEDS optional syllabus template</a>)</p></li>
-<li><p>Link to Code of Conduct (Bren / UCSB)</p></li>
-<li><p>Link to course GitHub Classroom, other essential resources</p></li>
-</ul>
-<h2 id="weekly-course-schedule">Weekly course schedule</h2>
-<ul>
-<li><strong>Lectures:</strong> MW 8am - 9:15am (Warehouse Room 1)</li>
-<li><strong>Labs:</strong> Th 10am - 12pm (Warehouse Room 2)</li>
-</ul>
-<h2 id="learning-objectives">Learning objectives</h2>
-<p>Condimentum id venenatis a condimentum. Ultricies mi quis hendrerit dolor magna eget est. Turpis egestas maecenas pharetra convallis. Sem nulla pharetra diam sit amet. Diam volutpat commodo sed egestas egestas fringilla. Mauris in aliquam sem fringilla ut morbi tincidunt augue interdum. Ornare massa eget egestas purus viverra accumsan in.</p>
-<ul>
-<li>Vulputate eu scelerisque felis imperdiet proin.</li>
-<li>Euismod nisi porta lorem mollis aliquam.</li>
-<li>Urna molestie at elementum eu facilisis sed odio morbi quis.</li>
-<li>Convallis a cras semper auctor neque. Semper quis lectus nulla at volutpat diam ut venenatis tellus.</li>
-</ul>
-<h2 id="course-requirements">Course requirements</h2>
-<h3 id="computing">Computing</h3>
-<ul>
-<li><p>Minimum device requirements</p></li>
-<li><p>Software requirements</p></li>
-<li><p>Account requirements</p></li>
-</ul>
-<h3 id="textbook">Textbook</h3>
-<ul>
-<li>Required textbook / information</li>
-</ul>
-<h3 id="other-requirements">Other requirements</h3>
-<ul>
-<li>Anything else</li>
-<li>Important for students to know</li>
-</ul>
-<h2 id="tentative-topics">Tentative topics</h2>
-<table>
-<thead>
-<tr class="header">
-<th>Week</th>
-<th>Lecture topics</th>
-<th>Lab topics</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1</td>
-<td>Topics</td>
-<td>Topics</td>
-</tr>
-<tr class="even">
-<td>2</td>
-<td>Topics</td>
-<td>Topics</td>
-</tr>
-<tr class="odd">
-<td>3</td>
-<td>Topics</td>
-<td>Topics</td>
-</tr>
-<tr class="even">
-<td>4</td>
-<td>Topics</td>
-<td>Topics</td>
-</tr>
-<tr class="odd">
-<td>5</td>
-<td>Topics</td>
-<td>Topics</td>
-</tr>
-<tr class="even">
-<td>6</td>
-<td>Topics</td>
-<td>Topics</td>
-</tr>
-<tr class="odd">
-<td>7</td>
-<td>Topics</td>
-<td>Topics</td>
-</tr>
-<tr class="even">
-<td>8</td>
-<td>Topics</td>
-<td>Topics</td>
-</tr>
-<tr class="odd">
-<td>9</td>
-<td>Topics</td>
-<td>Topics</td>
-</tr>
-<tr class="even">
-<td>10</td>
-<td>Topics</td>
-<td>Topics</td>
-</tr>
-</tbody>
-</table>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<h2 id="welcome">Welcome!</h2>
+<p>The Oliver Lab is based at the <a href="https://ucsb.edu">University
+of California, Santa Barbara</a> in the <a
+href="https://bren.ucsb.edu">Bren School of Environmental Science &amp;
+Management</a>.</p>
+<h2 id="people">People</h2>
+<p>Add text</p>
+<h2 id="research">Research</h2>
+<p>Add text</p>
+<h2 id="join">Join!</h2>
+<p>Add text</p>
+<p>This website is based on a <a
+href="https://github.com/allisonhorst/meds-distill-template">template</a>
+created by Dr. Allison Horst.</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
