@@ -9,6 +9,8 @@ knitr::opts_chunk$set(echo = TRUE)
 ## 2022
 Walter Jetz, Grigori Tertitski, Roland Kays, Uschi Mueller, Martin Wikelski, and supporting authors … **Ruth Y. Oliver** … (2022)  Biological earth observation with animal sensors. Trends in Ecology & Evolution, 37(4), 293-298.
 
+Diane M. Thomson, A. Kathryn McEachern, Emily L. Schultz, Kenneth Niessen, Dieter Wilken, Katherine Chess, Lauren F. Cole, Ruth Y. Oliver, Jennifer D. Phillips, Acadia Tucker. (2022) Diverse native island flora shows rapid recovery after exotic herbivore removal on Santa Rosa Island, California. Biological Invasions, 24, 1635-1649.
+
 ## 2021
 **Ruth Y. Oliver**, Carsten Meyer, Ajay Ranipeta, Kevin Winner, Walter Jetz (2021) Global and national trends, gaps, and opportunities in documenting and monitoring species distributions. PLoS Biology, 19(8), e3001336.
 DOI: https://doi.org/10.1371/journal.pbio.3001336

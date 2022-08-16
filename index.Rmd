@@ -48,14 +48,15 @@ If any of this interests you, see details on joining below!
 # or copy/paste this code elsewhere, updating the file path, to add other images to your site!
 knitr::include_graphics("img/headshot.jpg")
 ```
-<p style="color: #033F63">**Ruth Oliver**  </p>
-(she/her/hers)    
-**Assistant Professor** - UCSB  
-**Associate Research Scientist** - Yale University  
-**PhD** - Earth & Environmental Science, Columbia University  
-**BA** - Physics, Claremeont McKenna College  
+<p style="color: white">.  </p>
+<p style="color: #033F63">**Ruth Oliver**</p>
 
-**email**: rutholiver\@bren.ucsb.edu
+**Assistant Professor**  
+Kuni Endowed Junior Faculty Fellow  
+
+(she/her/hers)  
+**email**: rutholiver\@bren.ucsb.edu  
+[download CV](https://drive.google.com/file/d/13GVGIL3lR3GL8LMbU7qVjbRG-Su1kgE5/view?usp=sharing)
 :::
 
   
@@ -65,11 +66,11 @@ I'm looking forward to building a supportive and collaborative lab group. There 
 
 ### Graduate students
 
-PhD students can join the group through the [Bren's School PhD program](https://bren.ucsb.edu/phd-environmental-science-and-management).
+PhD students can join the group through the [Bren School PhD program](https://bren.ucsb.edu/phd-environmental-science-and-management).
 I will be recruiting students in the fall of 2022 (deadline to apply: December 15).
 
 Instead of emailing me, please fill out the interest survey below, so I can better organize my responses. 
-Please check out the [Resources](resources.html) page for tips on reaching out.  
+Please check out the [Resources](resources.html) page for tips on how to craft your message.  
 
 ***Note:*** You are more than welcome to reach out to other potential advisors at UCSB.
 
@@ -77,7 +78,7 @@ Please check out the [Resources](resources.html) page for tips on reaching out.
 
 ### Postdoctoral researchers
 
-I will be welcoming postdocs on an ongoing basis, depending on funding availability. If our research interests align and you would like to develop fellowship proposal(s) together, please fill out the interest survey below.
+I will be welcoming postdocs on an ongoing basis, depending on funding availability. If our research interests align, please fill out the interest survey below. I am happy to develop fellowship proposal(s) together.
 
 ### Interest survey
 
