@@ -1,15 +1,20 @@
 ---
-title: "Course resources"
+title: "Resources"
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-<p style="color: #ba5e00"><b>TO UPDATE THIS PAGE:</b> Open and edit the <b>resources.Rmd</b> file, in the project root, to delete this placeholder text and customize with your own!</p>
 
-### More on `distill`
+### Applying to graduate school
+Below are a list of resources for navigating the various stages of applying for a PhD
 
--   RStudio's [`distill` website](https://rstudio.github.io/distill/)
--   Inspiration and examples from the [distillery](https://distillery.rbind.io/showcase.html)
+* Contacting potential advisors
+  + [(Columbia E3B)](https://e3b.columbia.edu/wp-content/uploads/2022/05/Email-Template-for-Prospective-Grad-Students-to-PI.pdf)
+  + [(Cornell EEB)](https://ecologyandevolution.cornell.edu/sites/eeb/files/Tips%20for%20contacting%20potential%20advisors.pdf)
+  + [(First Gen Guide)](https://first-gen-guide.com/2020/07/24/phd-admissions-emailing-potential-advisors/)
+* Meeting with potential advisor and asking questions
+  + [(Columbia E3B)](https://e3b.columbia.edu/wp-content/uploads/2022/05/Guide-on-Meeting-with-Potential-Advisor-and-Asking-Questions-of-a-Grad-Program.pdf)
+
 

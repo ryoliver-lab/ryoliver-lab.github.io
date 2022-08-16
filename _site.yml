@@ -29,10 +29,10 @@ navbar:
 #          href: topic_9.html
 #        - text: "Topic 10: Add a table"
 #          href: topic_10.html
-#    - text: "Assignments"
-#      href: assignments.html
     - text: "Publications"
       href: publications.html
+    - text: "Resources"
+      href: resources.html
     - icon: ai ai-google-scholar fa-lg
       href: https://scholar.google.com/citations?user=Cqv1EXkAAAAJ&hl=en
     - icon: fab fa-twitter
