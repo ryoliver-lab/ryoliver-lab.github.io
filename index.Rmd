@@ -42,7 +42,7 @@ If any of this interests you, see details on joining below!
 ## People
 
 ::: {.floatting}
-```{r, out.width = "40%", out.extra='style="float:left; padding:20px"'}
+```{r, out.width = "35%", out.extra='style="float:left; padding:20px"'}
 
 # UPDATE IMAGE HERE 
 # or copy/paste this code elsewhere, updating the file path, to add other images to your site!
