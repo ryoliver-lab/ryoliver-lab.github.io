@@ -8,7 +8,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 ### Applying to graduate school
-Below are a list of resources for navigating the various stages of applying for a PhD
+Below are a list of resources for navigating the various stages of applying for a PhD:
 
 * Contacting potential advisors
   + [Columbia E3B](https://e3b.columbia.edu/wp-content/uploads/2022/05/Email-Template-for-Prospective-Grad-Students-to-PI.pdf)
@@ -18,4 +18,9 @@ Below are a list of resources for navigating the various stages of applying for 
   + [Columbia E3B](https://e3b.columbia.edu/wp-content/uploads/2022/05/Guide-on-Meeting-with-Potential-Advisor-and-Asking-Questions-of-a-Grad-Program.pdf)
   + [DiscvoerPhDs](https://www.discoverphds.com/blog/questions-to-ask-during-your-phd-interview)
 
+### Postdoctoral fellowships
+Below are a list of fellowships for postdoctoral scientists:
 
+* [University of California President's Postdoctoral Fellowship Program](https://ppfp.ucop.edu/info/)
+* [Ford Foundation Fellowship Program](https://sites.nationalacademies.org/pga/fordfellowships/pga_047960)
+* [Smith Fellows](https://conbio.org/mini-sites/smith-fellows)
