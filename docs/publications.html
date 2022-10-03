@@ -785,6 +785,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1857,15 +1858,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-          var fn = $(this).children()[0]
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2476,7 +2483,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2552,83 +2559,30 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </nav>
 </div>
 <h2 id="in-the-works">in the works</h2>
-<p><strong>Ruth Y. Oliver</strong>, Fabiola Iannarilli, Jorge Ahumada,
-Eric Fegraus, Nicole Flores, Roland Kays, Ajay Ranipeta, Matthew S.
-Rogan, Yanina V. Sica, Walter Jetz (2022) Camera trapping as an expanded
-view into global biodiversity and its change.<br />
-<em>In review at Philosophical Transactions of the Royal Society
-B</em></p>
+<p><strong>Ruth Y. Oliver</strong>, Fabiola Iannarilli, Jorge Ahumada, Eric Fegraus, Nicole Flores, Roland Kays, Ajay Ranipeta, Matthew S. Rogan, Yanina V. Sica, Walter Jetz (2022) Camera trapping as an expanded view into global biodiversity and its change.<br />
+<em>In review at Philosophical Transactions of the Royal Society B</em></p>
 <h2 id="section">2022</h2>
-<p>Walter Jetz, Grigori Tertitski, Roland Kays, Uschi Mueller, Martin
-Wikelski, and supporting authors … <strong>Ruth Y. Oliver</strong> …
-(2022) Biological earth observation with animal sensors. Trends in
-Ecology &amp; Evolution, 37(4), 293-298.</p>
-<p>Diane M. Thomson, A. Kathryn McEachern, Emily L. Schultz, Kenneth
-Niessen, Dieter Wilken, Katherine Chess, Lauren F. Cole, <strong>Ruth Y.
-Oliver</strong>, Jennifer D. Phillips, Acadia Tucker. (2022) Diverse
-native island flora shows rapid recovery after exotic herbivore removal
-on Santa Rosa Island, California. Biological Invasions, 24,
-1635-1649.</p>
+<p>Walter Jetz, Grigori Tertitski, Roland Kays, Uschi Mueller, Martin Wikelski, and supporting authors … <strong>Ruth Y. Oliver</strong> … (2022) Biological earth observation with animal sensors. Trends in Ecology &amp; Evolution, 37(4), 293-298.</p>
+<p>Diane M. Thomson, A. Kathryn McEachern, Emily L. Schultz, Kenneth Niessen, Dieter Wilken, Katherine Chess, Lauren F. Cole, <strong>Ruth Y. Oliver</strong>, Jennifer D. Phillips, Acadia Tucker. (2022) Diverse native island flora shows rapid recovery after exotic herbivore removal on Santa Rosa Island, California. Biological Invasions, 24, 1635-1649.</p>
 <h2 id="section-1">2021</h2>
-<p><strong>Ruth Y. Oliver</strong>, Carsten Meyer, Ajay Ranipeta, Kevin
-Winner, Walter Jetz (2021) Global and national trends, gaps, and
-opportunities in documenting and monitoring species distributions. PLoS
-Biology, 19(8), e3001336. DOI: <a
-href="https://doi.org/10.1371/journal.pbio.3001336"
-class="uri">https://doi.org/10.1371/journal.pbio.3001336</a></p>
+<p><strong>Ruth Y. Oliver</strong>, Carsten Meyer, Ajay Ranipeta, Kevin Winner, Walter Jetz (2021) Global and national trends, gaps, and opportunities in documenting and monitoring species distributions. PLoS Biology, 19(8), e3001336.
+DOI: <a href="https://doi.org/10.1371/journal.pbio.3001336" class="uri">https://doi.org/10.1371/journal.pbio.3001336</a></p>
 <h2 id="section-2">2020</h2>
-<p>Sarah C. Davidson, Gil Bohrer, Eliezer Gurarie, Jyoti Jennewein,
-Scott LaPoint, Peter J. Mahoney, Natalie T. Boelman, Jan Eitel, Laura R.
-Prugh, Lee Vierling, Emma Grier, Ajran H. Meddens, <strong>Ruth Y.
-Oliver</strong>, Roland Kays, Martin Wikelski, …, Mark Hebblewhite.
-(2020) Ecological insights from three decades of animal movement
-tracking across a changing Arctic, Science, 370. DOI:
-10.1126/science.abb7080</p>
-<p><strong>Ruth Y. Oliver</strong>, Peter J. Mahoney, Eliezer Gurarie,
-Nicole Krikun, Brian Weeks, Mark Hebblewhite, Glen Liston, Natalie
-Boelman (2020) Behavioral responses to spring snow conditions contribute
-to long-term shift in migration phenology in American robins,
-Environmental Research Letters, 15, 045003. DOI: <a
-href="https://doi.org/10.1088/1748-9326/ab71a0"
-class="uri">https://doi.org/10.1088/1748-9326/ab71a0</a></p>
+<p>Sarah C. Davidson, Gil Bohrer, Eliezer Gurarie, Jyoti Jennewein, Scott LaPoint, Peter J. Mahoney, Natalie T. Boelman, Jan Eitel, Laura R. Prugh, Lee Vierling, Emma Grier, Ajran H. Meddens, <strong>Ruth Y. Oliver</strong>, Roland Kays, Martin Wikelski, …, Mark Hebblewhite. (2020) Ecological insights from three decades of animal movement tracking across a changing Arctic, Science, 370.
+DOI: 10.1126/science.abb7080</p>
+<p><strong>Ruth Y. Oliver</strong>, Peter J. Mahoney, Eliezer Gurarie, Nicole Krikun, Brian Weeks, Mark Hebblewhite, Glen Liston, Natalie Boelman (2020) Behavioral responses to spring snow conditions contribute to long-term shift in migration phenology in American robins, Environmental Research Letters, 15, 045003.
+DOI: <a href="https://doi.org/10.1088/1748-9326/ab71a0" class="uri">https://doi.org/10.1088/1748-9326/ab71a0</a></p>
 <h2 id="section-3">2019</h2>
-<p>Jorge Ahumada, Eric Fegraus, Tanya Birch, Nicole Flores, Roland Kays,
-Tim O’Brien, Jonathan Palmer, Stephanie Schuttler, Jennifer Zhoa, Walter
-Jetz, Margaret Kinnaird, Sayali Kulkarni, Arnaud Lyet, Dave Thau,
-Michelle Duong, <strong>Ruth Oliver</strong>, Anthony Dancer. (2019)
-Wildlife Insights: A platform to maximize the potential of camera trap
-and other passive sensor wildlife data for the planet, Environmental
-Conservation. DOI: <a href="https://doi.org/10.1017/S0376892919000298"
-class="uri">https://doi.org/10.1017/S0376892919000298</a></p>
+<p>Jorge Ahumada, Eric Fegraus, Tanya Birch, Nicole Flores, Roland Kays, Tim O’Brien, Jonathan Palmer, Stephanie Schuttler, Jennifer Zhoa, Walter Jetz, Margaret Kinnaird, Sayali Kulkarni, Arnaud Lyet, Dave Thau, Michelle Duong, <strong>Ruth Oliver</strong>, Anthony Dancer. (2019) Wildlife Insights: A platform to maximize the potential of camera trap and other passive sensor wildlife data for the planet, Environmental Conservation.
+DOI: <a href="https://doi.org/10.1017/S0376892919000298" class="uri">https://doi.org/10.1017/S0376892919000298</a></p>
 <h2 id="section-4">2018</h2>
-<p><strong>Ruth Y. Oliver</strong>, Daniel P. W. Ellis, Helen E. Chmura,
-Jesse S. Krasue, Jonathan H. Pérez, Shannan K. Sweet, Laura Gough, John
-C. Wingfield, Natalie T. Boelman (2018) Eavesdropping on the Arctic:
-Automated bioacoustic reveal dynamics in songbird breeding phenology,
-Science Advances, 4. DOI: <a
-href="https://doi.org/10.1126/sciadv.aaq1084"
-class="uri">https://doi.org/10.1126/sciadv.aaq1084</a></p>
+<p><strong>Ruth Y. Oliver</strong>, Daniel P. W. Ellis, Helen E. Chmura, Jesse S. Krasue, Jonathan H. Pérez, Shannan K. Sweet, Laura Gough, John C. Wingfield, Natalie T. Boelman (2018) Eavesdropping on the Arctic: Automated bioacoustic reveal dynamics in songbird breeding phenology, Science Advances, 4.
+DOI: <a href="https://doi.org/10.1126/sciadv.aaq1084" class="uri">https://doi.org/10.1126/sciadv.aaq1084</a></p>
 <h2 id="section-5">2017</h2>
-<p>Benton N. Taylor, Angelica E. Patterson, Moyosore Ajayi, Rachel
-Arkebauer, Karen Bao, Natalie Bray, Robert M. Elliott, Paul P.G.
-Gauthier, Jessica Gersony, Rebecca Gibson, Marceau Guerin, Sara
-Lavenhar, Caroline Leland, Léo Lemordant, Wenying Liao, Jerry Melillo,
-<strong>Ruth Oliver</strong>, Case M. Prager, William Schuster, Naomi B.
-Schwartz, Christa Shen, Katherine Pavlis Terlizzi, and Kevin L. Griffin
-(2017) Growth and physiology of a dominant understory shrub, Hamamelis
-virginiana, following canopy disturbance in a temperate hardwood forest,
-Canadian Journal of Forest Research, 47: 193-201.</p>
+<p>Benton N. Taylor, Angelica E. Patterson, Moyosore Ajayi, Rachel Arkebauer, Karen Bao, Natalie Bray, Robert M. Elliott, Paul P.G. Gauthier, Jessica Gersony, Rebecca Gibson, Marceau Guerin, Sara Lavenhar, Caroline Leland, Léo Lemordant, Wenying Liao, Jerry Melillo, <strong>Ruth Oliver</strong>, Case M. Prager, William Schuster, Naomi B. Schwartz, Christa Shen, Katherine Pavlis Terlizzi, and Kevin L. Griffin (2017) Growth and physiology of a dominant understory shrub, Hamamelis virginiana, following canopy disturbance in a temperate hardwood forest, Canadian Journal of Forest Research, 47: 193-201.</p>
 <h2 id="section-6">2016</h2>
-<p>Troy S. Magney, Jan U.H. Eitel, Kevin L. Griffin, Natalie T. Boelman,
-Heather E. Greaves, Case M. Prager, Barry A. Logan, Guang Zheng, Lixia
-Ma, Elizabeth A. Fortin, <strong>Ruth Y. Oliver</strong>, Lee A.
-Vierling (2016) LiDAR canopy radiation model reveals patterns of
-photosynthetic partitioning in an Arctic shrub, Agricultural and Forest
-Meteorology, 221: 78-93. DOI: <a
-href="http://dx.doi.org/10.1016/j.agrformet.2016.02.007"
-class="uri">http://dx.doi.org/10.1016/j.agrformet.2016.02.007</a>.</p>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p>Troy S. Magney, Jan U.H. Eitel, Kevin L. Griffin, Natalie T. Boelman, Heather E. Greaves, Case M. Prager, Barry A. Logan, Guang Zheng, Lixia Ma, Elizabeth A. Fortin, <strong>Ruth Y. Oliver</strong>, Lee A. Vierling (2016) LiDAR canopy radiation model reveals patterns of photosynthetic partitioning in an Arctic shrub, Agricultural and Forest Meteorology, 221: 78-93. DOI: <a href="http://dx.doi.org/10.1016/j.agrformet.2016.02.007" class="uri">http://dx.doi.org/10.1016/j.agrformet.2016.02.007</a>.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
