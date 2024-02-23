@@ -26,18 +26,8 @@ knitr::include_graphics("img/campus.jpeg")
 
 Launched in 2022, the Oliver Lab is based at the [University of California, Santa Barbara](https://ucsb.edu) in the [Bren School of Environmental Science & Management](https://bren.ucsb.edu). 
 
-**Background:**  
+Understanding our planet’s biodiversity has never been more urgent as rapid anthropogenic changes disrupt the world’s ecosystems. Advances in technology and large-scale data mobilization efforts now generate huge amounts of multi-dimensional biodiversity data, in many cases outpacing our ability to rapidly synthesize disparate data types into actionable knowledge. My research program focuses on developing methodologies and leveraging emerging technologies to harness the power of big data to gain new ecological insights.
 
-Understanding our planet’s biodiversity has never been more urgent as rapid anthropogenic changes disrupt the world’s ecosystems. Advances in technology and large-scale data mobilization efforts now generate huge amounts of multi-dimensional biodiversity data, in many cases outpacing our ability to rapidly synthesize disparate data types into actionable knowledge. My research program focuses on developing methodologies and leveraging emerging technologies to harness the power of big data to gain new ecological insights and create global biodiversity metrics that can inform policy choices.
-
-**Our group focuses on:**
-
--   leveraging automated biodiversity sensors (e.g. audio recorders, camera traps)
--   using tracking technology to understand how animals navigate increasingly modified environments
--   developing global metrics to track progress on filling biodiversity data gaps
--   creating a more equitable scientific community, by listening, learning, struggling, and trying again
-
-If any of this interests you, see details on joining below!
 
 ## People
 
@@ -52,20 +42,20 @@ knitr::include_graphics("img/headshot.jpg")
 <p style="color: #033F63">**Ruth Oliver**</p>
 **Assistant Professor**  
 Kuni Endowed Junior Faculty Fellow  
-(she/her/hers)  
+(she/her)  
 **email**: rutholiver\@bren.ucsb.edu  
-[download CV](https://drive.google.com/file/d/13GVGIL3lR3GL8LMbU7qVjbRG-Su1kgE5/view?usp=sharing)
+[download CV](https://drive.google.com/file/d/10lPFHHIVch-s5cNXjPn-u62Dr1i8TiLk/view?usp=sharing)
 :::
 
   
 ## Join!
 
-I'm looking forward to building a supportive and collaborative lab group. There are opportunities for field-based and computational research, joining existing projects and developing new projects together.
+I'm looking forward to building a supportive and collaborative lab group. There are opportunities to join existing projects and developing new projects together.
 
 ### Graduate students
 
 PhD students can join the group through the [Bren School PhD program](https://bren.ucsb.edu/phd-environmental-science-and-management).
-I will be recruiting students in the fall of 2022 to start fall 2023 (deadline to apply: December 15).
+I will be recruiting students to start fall 2024.
 
 Instead of emailing me, please fill out the interest survey below, so I can better organize my responses. 
 Please check out the [Resources](resources.html) page for tips on how to craft your message.  
@@ -76,7 +66,7 @@ Please check out the [Resources](resources.html) page for tips on how to craft y
 
 ### Postdoctoral researchers
 
-I will be welcoming postdocs on an ongoing basis, depending on funding availability. If our research interests align, please fill out the interest survey below. I am happy to develop fellowship proposal(s) together. Please check out the [Resources](resources.html) page for a list of potential fellowships.
+I will be welcoming postdocs on an ongoing basis, depending on funding availability. If our research interests align, please fill out the interest survey below. I am happy to develop fellowship proposal(s) together. Please check out the [Resources](resources.html) page for a list of potential fellowships. I am currently recruiting through the [Bren Global Change Postdoctoral Fellowship](https://www.globalchangepostdoctoralfellowship.com/).
 
 ### Interest survey
 
