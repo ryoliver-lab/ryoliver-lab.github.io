@@ -1,6 +1,6 @@
 ---
 title: "Oliver Lab"
-description: "Global change ecology at UCSB's Bren School"
+description: "wildlife ecology in a changing world"
 site: distill::distill_website
 ---
 
