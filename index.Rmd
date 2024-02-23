@@ -38,13 +38,13 @@ Understanding our planet’s biodiversity has never been more urgent as rapid an
 # or copy/paste this code elsewhere, updating the file path, to add other images to your site!
 knitr::include_graphics("img/headshot.jpg")
 ```
-<p style="color: white">.  </p>
-<p style="color: #033F63">**Ruth Oliver**</p>
-**Assistant Professor**  
+**Ruth Oliver**
+
+Assistant Professor  
 Kuni Endowed Junior Faculty Fellow  
 (she/her)  
-**email**: rutholiver\@bren.ucsb.edu  
-[download CV](https://drive.google.com/file/d/10lPFHHIVch-s5cNXjPn-u62Dr1i8TiLk/view?usp=sharing)
+rutholiver\@bren.ucsb.edu  
+[CV](https://drive.google.com/file/d/10lPFHHIVch-s5cNXjPn-u62Dr1i8TiLk/view?usp=sharing)
 :::
 
   
