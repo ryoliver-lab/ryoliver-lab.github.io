@@ -50,10 +50,8 @@ knitr::include_graphics("img/headshot.jpg")
 ```
 <p style="color: white">.  </p>
 <p style="color: #033F63">**Ruth Oliver**</p>
-
 **Assistant Professor**  
 Kuni Endowed Junior Faculty Fellow  
-
 (she/her/hers)  
 **email**: rutholiver\@bren.ucsb.edu  
 [download CV](https://drive.google.com/file/d/13GVGIL3lR3GL8LMbU7qVjbRG-Su1kgE5/view?usp=sharing)
